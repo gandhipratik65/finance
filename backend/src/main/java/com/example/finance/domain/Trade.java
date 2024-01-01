@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 
 // Trade.java
 @Entity
-@Data
 public class Trade {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,5 +27,22 @@ public class Trade {
     }
 
     // getters and setters
+
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getSymbol() {
+        return symbol;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public double getPrice() {
+        return price;
+    }
 }
 

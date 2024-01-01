@@ -36,6 +36,13 @@
 			<artifactId>spring-data-r2dbc</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+
 		<!-- Enable connection pooling -->
 		<dependency>
 			<groupId>io.r2dbc</groupId>

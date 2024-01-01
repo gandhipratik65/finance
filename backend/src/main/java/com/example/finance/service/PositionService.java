@@ -2,9 +2,9 @@ package com.example.finance.service;
 
 // PositionService.java
 import com.example.finance.domain.Trade;
+import com.example.finance.repository.TradeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import  com.example.finance.repository.PositionRepository;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
@@ -12,10 +12,10 @@ import java.util.Arrays;
 
 @Service
 public class PositionService {
-    private final PositionRepository positionRepository;
+    private final TradeRepository positionRepository;
 
     @Autowired
-    public PositionService(PositionRepository positionRepository) {
+    public PositionService(TradeRepository positionRepository) {
         this.positionRepository = positionRepository;
     }
 
